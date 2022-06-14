@@ -1,0 +1,144 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+a {text-decoration: none;
+    color: rgb(0, 30, 63);}
+
+header{position: relative;
+       
+        height: 20%;
+        border: 1px solid rgb(0, 89, 185);
+        text-shadow: 3px 3px 3px rgb(109, 179, 255);}
+header h1{
+    font-size: 15vw;
+    color: rgb(0, 30, 63);}
+body{background-image: linear-gradient(to bottom, rgb(0, 123, 255), grey);}
+.navb {height: 60%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "notebook . . ."
+                            "allinone allinone allinone allinone"
+                            "Slim Slim Slim Slim"
+                            "Mid-Towers Mid-Towers Mid-Towers Mid-Towers";
+}
+
+.notebooks{
+    grid-area: notebook;
+border: solid rgb(0, 89, 185) 2px;}
+
+.allinone{
+    grid-area: allinone;
+    border: solid rgb(0, 89, 185) 2px;}
+.slim{
+    grid-area: slim;
+    border: solid rgb(0, 89, 185) 2px;}
+.midtowers{
+    grid-area: midtowers;
+    border: solid rgb(0, 89, 185)k 2px;}
+nav div .desplegable{
+    font-size: 15vw;
+}
+.section{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+
+.gridsection
+    {
+        height: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: " Productos NombreProducto"
+                             "Descripcion Descripcion";
+                              
+    }
+
+.VistasProductos{display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;   
+    width: 24vw;
+    height: 30vw;
+    margin: 1vw;
+    padding: 1vw 0vw;
+    background-color: #6277a4;
+    font-family: 'Poppins', sans-serif;}
+
+.VistasProductos img{width: 20vw;}
+
+div h4{font-family: 'Poppins', sans-serif;
+        font-size: x-large;
+    }
+.collapsablearea1 {background-color: #000000;
+        font-size: 4vw;
+    }
+
+            
+section div img{
+    margin: 0.5vw 2vw;
+    width: 35vw;
+    border-radius: 1vw;}  
+            
+.NombreProducto{font-family: 'Poppins', sans-serif;
+            font-size: 2vw;
+            margin: 2vw;
+            padding: 0rem 3vw;
+            border-radius: 1vw;
+            width: 35vw;
+            border: solid 2px #000000;
+            background-color: #6277a4
+        }
+
+div p {      
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5vw;}
+        
+.Descripcion{grid-area: Descripcion;
+            border-radius: 1rem;
+            padding: 2rem 2rem ;
+            background-color: #6277a4;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2vw;
+            text-align: center;
+        border: solid 2px black;}
+
+.trabajando{display: flex;
+justify-content: center;}
+h3{ font-size: 8vw;}
+
+
+
+
+footer{ display: flex;
+    flex-direction: row;
+    overflow:auto;
+    justify-content: space-evenly;
+    height: 7vw;    
+    padding: 1vw;
+    z-index: 99}
+footer div{height: 3vw;
+    width: 40vw;}
+footer div a{font-size: 3vw;
+}
+.footertext {text-align: center;
+    font-size: 3vw;}
+footer div:hover{ transform: scale(1.2,1.2);
+        transition: 2s;}
+
+@media screen and (max-width: 768px) 
+    {.section {flex-direction: column;
+        justify-content: center;
+    align-items: center;} 
+.VistasProductos{ width: 80%;
+height: 50vw; 
+justify-content: center;
+align-items: center;}
+.VistasProductos img{width: 30vw;
+}
+}
+
