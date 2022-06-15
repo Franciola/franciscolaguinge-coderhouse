@@ -69,13 +69,19 @@ nav div .desplegable{
     background-color: #6277a4;
     font-family: 'Poppins', sans-serif;}
 
+    
+
 .VistasProductos img{width: 20vw;}
+
 
 div h4{font-family: 'Poppins', sans-serif;
         font-size: x-large;
     }
-.collapsablearea1 {background-color: #000000;
+.collapsablearea1 {background-color: #8eabea;
         font-size: 4vw;
+        border-bottom-left-radius: 3rem;
+
+        
     }
 
             
@@ -127,8 +133,10 @@ footer div a{font-size: 3vw;
 }
 .footertext {text-align: center;
     font-size: 3vw;}
-footer div:hover{ transform: scale(1.2,1.2);
+footer div:hover{animation: true; transform: scale(1.2,1.2);
         transition: 2s;}
+.VistasProductos:hover{animation: true; transform: scale(1.1,1.1);
+    transition: 1s;}
 
 @media screen and (max-width: 768px) 
     {.section {flex-direction: column;
